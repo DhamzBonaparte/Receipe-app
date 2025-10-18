@@ -1,0 +1,108 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  .favs {
+    background-color: beige;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+    font-size: 2rem;
+    font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+
+    .title {
+      text-decoration: none;
+      font-family: cursive;
+      font-size: 1.6rem;
+      color: black;
+      padding: 10px;
+    }
+    .icon {
+      color: red;
+      font-size: 2rem;
+      margin-left: 10px;
+    }
+  }
+
+  .Favorites {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px;
+    flex-wrap: wrap;
+
+    .card {
+      width: 20vw;
+      height: 58vh;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 15px;
+      margin-top: 23px;
+      margin-bottom: 20px;
+      margin-right: 10px;
+      background-color: bisque;
+
+      .image {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+        border-radius: 20px;
+
+        .imgg {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          display: flex;
+          border-radius: 20px;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+
+      .talaa {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .idd {
+          background-color: beige;
+          height: 5vh;
+          width: auto;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 20px;
+          font-size: x-large;
+        }
+
+        .meall {
+          background-color: beige;
+          height: 5vh;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          display: flex;
+          border-radius: 20px;
+          font-weight: 700;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .categoryy {
+          background-color: beige;
+          height: 5vh;
+          justify-content: center;
+          align-items: center;
+          width: auto;
+          display: flex;
+          border-radius: 20px;
+          font-weight: 700;
+          font-family: Arial, Helvetica, sans-serif;
+        }
+      }
+    }
+  }
+}

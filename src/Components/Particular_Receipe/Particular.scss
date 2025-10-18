@@ -1,0 +1,158 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  .receipess {
+    display: flex;
+
+    .left {
+      left: 0;
+      display: flex;
+      width: 30%;
+      height: 100%;
+      padding: 10px;
+      background-color: beige;
+      flex-direction: column;
+
+      .img {
+        height: 50vh;
+        border-radius: 20px;
+        padding: 10px;
+        width: 95%;
+        img {
+          object-fit: cover;
+          height: 100%;
+          width: 100%;
+          border-radius: 20px;
+        }
+      }
+
+      .ingredients {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+
+        .ing {
+          text-align: center;
+          font-size: 30px;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+
+        .bottom {
+          display: flex;
+          border: 1px solid black;
+          display: flex;
+          justify-content: center;
+          padding: 20px;
+          border-radius: 20px;
+          margin: 10px;
+          background-color: rgb(53, 87, 110);
+          color: white;
+          border: none;
+
+          .Name,
+          .Measure {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 600;
+            font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+              "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          }
+        }
+      }
+    }
+
+    .right {
+      right: 0;
+      background-color: rgb(29, 132, 180);
+      height: 100bh;
+      width: 70%;
+      display: flex;
+      flex-direction: column;
+      justify-content: start;
+    }
+
+    .topp {
+      padding: 5px;
+      height: 30%;
+      margin: 10px;
+
+      .id {
+        height: 9vh;
+        display: flex;
+        font-size: 3rem;
+        justify-content: center;
+        align-items: center;
+        background-color: bisque;
+        border-radius: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+
+      .name {
+        height: 10vh;
+        display: flex;
+        font-size: 2rem;
+        justify-content: space-around;
+        align-items: center;
+        background-color: bisque;
+        border-radius: 20px;
+        font-family: Georgia, "Times New Roman", Times, serif;
+      }
+    }
+
+    .mid {
+      border: 1px solid black;
+      margin-top: 10px;
+      padding: 15px;
+      height: 100%;
+      background-color: bisque;
+      margin: 15px;
+      border: none;
+      border-radius: 20px;
+
+      .instructions {
+        height: 20%;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+        height: 100%;
+
+        .INS {
+          font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+          font-size: 30px;
+          margin-bottom: 20px;
+          font-weight: 700;
+        }
+
+        .ins {
+          font-size: 25px;
+          font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+        }
+      }
+    }
+  }
+}
+
+.buttt {
+  height: 6vh;
+  border-radius: 20px;
+  border: none;
+  background-color: rgb(53, 87, 110);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.4rem;
+  font-weight: 700;
+  text-decoration: none;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(228, 0, 0);
+    transition: 0.3s ease-in;
+    color: black;
+  }
+}

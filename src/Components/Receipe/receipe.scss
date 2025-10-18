@@ -1,0 +1,88 @@
+body {
+  height: 90vh;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  box-sizing: border-box;
+
+  .Receipes {
+    background-color: rgb(27, 38, 38);
+    height: 100%;
+    max-width: 100vw;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    flex: 1, 1, 200px;
+
+    .card {
+      border: white 1px solid;
+      width: 20%;
+      height: 50%;
+      padding: 15px;
+      border-radius: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      margin-bottom: 30px;
+
+      .image {
+        height: 55%;
+        border: white 1px solid;
+        border-radius: 20px;
+        margin-bottom: 10px;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          border-radius: 20px;
+        }
+      }
+
+      .tala {
+        border: white 1px solid;
+        border-radius: 20px;
+        height: 20%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-bottom: 10px;
+        padding: 10px;
+
+        p {
+          height: 1vh;
+          font-size: 20px;
+          color: white;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          margin-right: 5px;
+          font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+            "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        }
+      }
+      .button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        button {
+          height: 4vh;
+          width: 8vw;
+          border-radius: 10px;
+          border: none;
+          font-family: Arial, Helvetica, sans-serif;
+          font-weight: 500;
+          font-size: 15px;
+
+          &:hover {
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
