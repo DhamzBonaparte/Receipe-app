@@ -10,7 +10,7 @@ function App() {
     <>
       <Routes>
         <Route path="/" element={<Home />}></Route>
-        <Route path="/favorites" element={<Fav data={data} />}></Route>
+        <Route path="/favorites" element={<Fav data={data} setData={setData}/>}></Route>
         <Route
           path="/receipe"
           element={<Particular data={data} setData={setData} />}

@@ -2,8 +2,11 @@ import FavoriteIcon from "@mui/icons-material/Favorite";
 import { Link } from "react-router-dom";
 import "./fav.scss";
 
-export default function Fav({ data }) {
-  console.log(data);
+export default function Fav({ data,setData }) {
+
+  function handleRemove(id) {
+    setData(data.filter((item) => item.id !== id));
+  }
 
   return (
     <>
@@ -28,6 +31,9 @@ export default function Fav({ data }) {
                 <p className="idd ">#{items.id}</p>
                 <p className="meall">{items.meal}</p>
                 <p className="categoryy">{items.category}</p>
+                <button onClick={() => handleRemove(items.id)}>
+                  Remove from Favorites
+                </button>
               </div>
             </div>
           );
